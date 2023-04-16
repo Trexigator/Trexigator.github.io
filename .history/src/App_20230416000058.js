@@ -38,7 +38,7 @@ function App() {
   </div> :
   <div className="center">
   <Fragment>
-    Enter a paragraph:<br></br>
+    <span margin = "20px">Enter a paragraph: </span>
     <textarea ref={passageRef} rows="30" cols="100"></textarea>
     <br></br>
     Ask a question:<br></br>

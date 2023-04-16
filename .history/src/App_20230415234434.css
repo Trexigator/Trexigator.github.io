@@ -2,12 +2,14 @@
   background-image: url("./assets/bground.jpg");
   background-color: #cccccc;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   text-align: center;
-}
-.center {
-  margin-top: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {

@@ -36,9 +36,9 @@ function App() {
   <div>
     <div>Model Loading...</div>
   </div> :
-  <div className="center">
   <Fragment>
-    Enter a paragraph:<br></br>
+    <div>
+    Enter a paragraph: <br></br>
     <textarea ref={passageRef} rows="30" cols="100"></textarea>
     <br></br>
     Ask a question:<br></br>
@@ -47,8 +47,8 @@ function App() {
     Answer:
     {/*{answer ? (answer.map((ans,idx)=><div><b>Answer{idx+1} = </b>{ans.text} {ans.score}</div>)):""}*/}
     {answer ? (answer.slice(0, 1).map((ans,idx)=><div>{ans.text} </div>)):""}
+    </div>
   </Fragment>
-  </div>
 
   }
     </div>

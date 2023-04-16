@@ -24,7 +24,8 @@ function App() {
     console.log('Question submitted.')
     const passage = passageRef.current.value
     const question = questionRef.current.value
-    const answers = await model.findAnswers(question, passage)
+    const answers = await model.findAnswers(question,
+    passage)
     setAnswer(answers);
     console.log(answers)
     }
@@ -36,19 +37,17 @@ function App() {
   <div>
     <div>Model Loading...</div>
   </div> :
-  <div className="center">
   <Fragment>
-    Enter a paragraph:<br></br>
+    Enter a paragraph: <br></br>
     <textarea ref={passageRef} rows="30" cols="100"></textarea>
     <br></br>
     Ask a question:<br></br>
     <input ref={questionRef} onKeyPress={answerQuestion} size="80"></input>
     <br></br>
-    Answer:
+    Answers:
     {/*{answer ? (answer.map((ans,idx)=><div><b>Answer{idx+1} = </b>{ans.text} {ans.score}</div>)):""}*/}
-    {answer ? (answer.slice(0, 1).map((ans,idx)=><div>{ans.text} </div>)):""}
+    {answer ? (answer.map((ans,idx)=><div>{ans.text} </div>)):""}
   </Fragment>
-  </div>
 
   }
     </div>

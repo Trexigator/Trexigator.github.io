@@ -3,7 +3,8 @@ import * as qna from "@tensorflow-models/qna";
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState, useRef } from "react";
-import { Fragment } from "react";
+//import { Fragment } from "react";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   const passageRef = useRef(null);
@@ -37,7 +38,7 @@ function App() {
     <div>Model Loading...</div>
   </div> :
   <div className="center">
-  <Fragment>
+  <Box>
     Enter a paragraph:<br></br>
     <textarea ref={passageRef} rows="30" cols="100"></textarea>
     <br></br>
@@ -47,7 +48,7 @@ function App() {
     Answer:
     {/*{answer ? (answer.map((ans,idx)=><div><b>Answer{idx+1} = </b>{ans.text} {ans.score}</div>)):""}*/}
     {answer ? (answer.slice(0, 1).map((ans,idx)=><div>{ans.text} </div>)):""}
-  </Fragment>
+  </Box>
   </div>
 
   }

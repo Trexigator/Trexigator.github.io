@@ -3,7 +3,8 @@ import * as qna from "@tensorflow-models/qna";
 import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState, useRef } from "react";
-import { Fragment } from "react";
+//import { Fragment } from "react";
+import { Box } from "@chakra-ui/react";
 
 function App() {
   const passageRef = useRef(null);

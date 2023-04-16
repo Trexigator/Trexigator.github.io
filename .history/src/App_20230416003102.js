@@ -39,10 +39,10 @@ function App() {
   <div className="center">
   <Fragment>
     Enter a paragraph:<br></br>
-    <textarea ref={passageRef} rows="30" cols="100" id = "bigrounded-input"></textarea>
+    <textarea ref={passageRef} rows="30" cols="100" class = "rounded-input"></textarea>
     <br></br>
     Ask a question:<br></br>
-    <input ref={questionRef} onKeyPress={answerQuestion} size="80" id = "rounded-input"></input>
+    <input ref={questionRef} onKeyPress={answerQuestion} size="80" class = "rounded-input"></input>
     <br></br>
     Answer:
     {/*{answer ? (answer.map((ans,idx)=><div><b>Answer{idx+1} = </b>{ans.text} {ans.score}</div>)):""}*/}

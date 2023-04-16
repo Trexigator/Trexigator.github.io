@@ -11,25 +11,15 @@
 }
 
 /* input boxes */
-#bigrounded-input {
+#rounded-input {
 	padding-left: 10px;
 	border-width: thin;
 	border-radius:5px;
-	width: 700px;
-	height:400px;
-	margin: 20px;
+	width: 300px;
+	height: 30px;
+	margin-left: 20px;
   }
-  
- #rounded-input {
-  padding-left: 10px;
-  border-width: thin;
-  border-radius:5px;
-  width: 700px;
-  height: 30px;
-  margin: 20px;
-  }  
 
-  
 .App-logo {
   height: 40vmin;
   pointer-events: none;

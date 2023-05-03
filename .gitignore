@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/client/node_modules
+/server/node_modules
 /.pnp
 .pnp.js
 
@@ -21,3 +23,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.history/client/src/components/QATensor_20230502204515.js
+.history/client/src/components/QATensor_20230502204113.js
+.history/client/src/components/QATensor_20230502170611.js
+.history/client/src/components/QATensor_20230502170548.js
+.history/client/src/components/Home_20230502204426.js
+.history/client/src/components/Home_20230502204410.js
+.history/client/src/components/Home_20230502204203.js
+.history/client/src/App_20230502204446.js
+.history/client/src/App_20230502170804.js
+.history/client/src/App_20230502170624.js
+.history/client/src/App_20230502141222.js
+.history/client/src/App_20230502204953.css
+.history/client/src/App_20230502204711.js
+.history/client/src/App_20230502204659.js
+.history/client/src/App_20230502141222.css
+.history/.gitignore_20230502205629
+.history/.gitignore_20230502204626
